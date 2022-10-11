@@ -10,7 +10,7 @@ function Signup() {
     <form>
         <div>
            <input id="firstName" name="firstName" type="text" placeholder="Enter your name" onChange={(e) => setFirstName(e.target.value)} />
-           <input id="lastName" name="lastName" type="text" placeholder="Enter your name" onChange={(e) => setLastName(e.target.value)} />
+           <input id="lastName" name="lastName" type="text" placeholder="Enter your lastName" onChange={(e) => setLastName(e.target.value)} />
         </div>
     </form>
     
