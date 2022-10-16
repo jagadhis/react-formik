@@ -6,6 +6,7 @@ function Signup() {
   const [lastName,setLastName] = useState("");
 
   console.log(firstName);
+  console.log(lastName);
   return (
     <form>
         <div>
