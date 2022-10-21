@@ -16,7 +16,7 @@ function Signup() {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-    <div className='mt-4 flex flex-row'>
+    <div className='mt-4 flex flex-col'>
      <label htmlFor='firstName'>FirstName : </label>
      <input 
      id="firstName"
