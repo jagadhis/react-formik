@@ -16,6 +16,7 @@ function Signup() {
 
   return (
     <form onSubmit={formik.handleSubmit}>
+    <div className='mt-4 flex flex-row'>
      <label htmlFor='firstName'>FirstName : </label>
      <input 
      id="firstName"
@@ -24,6 +25,15 @@ function Signup() {
      onChange={formik.handleChange}
      value={formik.values.firstName}
      />
+      <label htmlFor='lastName'>lastName : </label>
+     <input 
+     id="lastName"
+     name="lastName"
+     type="text"
+     onChange={formik.handleChange}
+     value={formik.values.lastName}
+     />
+     </div>
     </form>
     
   )
