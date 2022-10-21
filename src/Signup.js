@@ -1,18 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import {useFormik} from 'formik';
 
 function Signup() {
 
-  const [firstName,setFirstName] = useState("");
-  const [lastName,setLastName] = useState("");
 
-  console.log(firstName);
-  console.log(lastName);
+  const formik = useFormik({
+    initialValues:{
+      firstName:'',
+      lastName:'',
+    },
+    onSubmit:values => {
+      alert(JSON.stringify(values,null,2));
+    }
+  })
+
   return (
-    <form>
-        <div>
-           <input id="firstName" name="firstName" type="text" placeholder="Enter your name" onChange={(e) => setFirstName(e.target.value)} />
-           <input id="lastName" name="lastName" type="text" placeholder="Enter your lastName" onChange={(e) => setLastName(e.target.value)} />
-        </div>
+    <form onSubmit={formik.handleSubmit}>
+     
     </form>
     
   )
