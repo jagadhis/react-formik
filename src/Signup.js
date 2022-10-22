@@ -15,11 +15,13 @@ function Signup() {
   })
 
   return (
-    <div>
+    <div className="mt-5 md:col-span-2 md:mt-0">
+       <div className="grid grid-cols-6 gap-6">
     <form onSubmit={formik.handleSubmit}>
-    <div className='mt-4 flex flex-col'>
+    <div className='mt-4 flex flex-col sm:mt-4'>
      <label htmlFor='firstName'>FirstName : </label>
      <input 
+     className='border border-gray-400'
      id="firstName"
      name="firstName"
      type="text"
@@ -28,6 +30,7 @@ function Signup() {
      />
       <label htmlFor='lastName'>lastName : </label>
      <input 
+     className='border border-gray-400'
      id="lastName"
      name="lastName"
      type="text"
@@ -35,9 +38,10 @@ function Signup() {
      value={formik.values.lastName}
      />
 
-     <button color="primary" type="submit"> Submit Form</button>
+     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" color="primary" type="submit"> Submit Form</button>
      </div>
     </form>
+    </div>
     </div>
     
   )
