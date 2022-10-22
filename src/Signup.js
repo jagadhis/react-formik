@@ -15,6 +15,7 @@ function Signup() {
   })
 
   return (
+    <div>
     <form onSubmit={formik.handleSubmit}>
     <div className='mt-4 flex flex-col'>
      <label htmlFor='firstName'>FirstName : </label>
@@ -34,9 +35,10 @@ function Signup() {
      value={formik.values.lastName}
      />
 
-     <button type="submit"> Submit Form</button>
+     <button color="primary" type="submit"> Submit Form</button>
      </div>
     </form>
+    </div>
     
   )
 }
