@@ -16,7 +16,8 @@ function Signup() {
 
   return (
     <div className="mt-5 md:col-span-2 md:mt-0">
-       <div className="grid grid-cols-6 gap-6">
+       <div className="grid grid-cols-3 gap-6">
+        <div className='xs:col-span-3'>
     <form onSubmit={formik.handleSubmit}>
     <div className='mt-4 flex flex-col sm:mt-4'>
      <label htmlFor='firstName'>FirstName : </label>
@@ -41,6 +42,7 @@ function Signup() {
      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" color="primary" type="submit"> Submit Form</button>
      </div>
     </form>
+    </div>
     </div>
     </div>
     
