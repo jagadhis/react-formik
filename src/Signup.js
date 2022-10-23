@@ -16,8 +16,8 @@ function Signup() {
 
   return (
     <div className="mt-5 md:col-span-2 md:mt-0">
-       <div className="grid grid-cols-3 gap-6">
-        <div className='xs:col-span-3'>
+    <div className="grid grid-cols-3 gap-6">
+    <div className='xs:col-span-3'>
     <form onSubmit={formik.handleSubmit}>
     <div className='mt-4 flex flex-col sm:mt-4'>
      <label htmlFor='firstName'>FirstName : </label>
