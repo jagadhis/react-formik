@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
+import { NavLink } from 'react-router-dom';
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -84,7 +85,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-function Home() {
+function Navbar() {
   return (
     <div>
       <Popover className="relative bg-white">
@@ -252,9 +253,9 @@ function Home() {
               </Popover>
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              <NavLink to="/signup" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
                 Sign in
-              </a>
+              </NavLink>
               <a
                 href="#"
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
@@ -351,4 +352,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Navbar;
